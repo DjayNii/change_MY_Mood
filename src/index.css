@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Thunder;
+  font-family: Thunder_LC;
   src: url(fonts/Thunder-LC.otf);
 }
 

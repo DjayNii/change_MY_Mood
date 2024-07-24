@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        thunder: ["Thunder", "serif"],
+        thunder: ["Thunder_LC", "serif"],
+        Anton: ["Anton SC", "serif"],
       },
     },
   },
