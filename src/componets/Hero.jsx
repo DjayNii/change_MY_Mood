@@ -23,7 +23,7 @@ function Hero(props) {
             </h2>
           </div>
         </div>
-        <div className="  w-[90%] mt-5 mb-7 flex flex-colitems-center md:flex-row lg:flex-row justify-between ">
+        <div className="  w-[90%] mt-5 mb-7 flex flex-col items-center md:flex-row lg:flex-row justify-between ">
           <div className="flex flex-col gap-3 font-thunder  ">
             {/* background color */}
             <div
