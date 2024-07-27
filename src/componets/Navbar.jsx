@@ -14,7 +14,10 @@ function Navbar(props) {
           <h1>First</h1>
           <h1>Second</h1>
           <button
-            style={{ backgroundColor: props.primary, color: props.secondary }}
+            style={{
+              background: `linear-gradient(${props.primary},${props.accent})`,
+              color: props.secondary,
+            }}
             className="w-[19vw] h-full text-[1.5vh] px-2 py-2  items-center xl:w-[7vw]  h-full text-[2.1vh] px-2 md: w-[12vw]  "
           >
             CTA Button

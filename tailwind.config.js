@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         thunder: ["Thunder_LC", "serif"],
         Anton: ["Anton SC", "serif"],
+        lexend: ["Lexend", "sans-serif"],
       },
     },
   },

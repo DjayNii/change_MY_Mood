@@ -73,9 +73,9 @@ function App() {
 
         <div className="text-center">
           <button
-            className="w-[20vh]  h-[10vh] mb-4 text-xl font-thunder font-bold tracking-wider"
+            className="w-[20vh]  h-[10vh] mb-4 text-xl font-thunder font-bold tracking-wider rounded-md"
             style={{
-              backgroundColor: themeColor.secondary,
+              background: `linear-gradient(${themeColor.secondary},${themeColor.accent})`,
               color: themeColor.primary,
               boxShadow: ` 0 2px 8px 0 ${themeColor.accent}, 0 0px 20px 0 ${themeColor.accent}`,
             }}
