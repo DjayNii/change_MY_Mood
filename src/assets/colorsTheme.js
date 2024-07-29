@@ -41,4 +41,47 @@ export const colorsDS = {
     secondary: "#5D1F88",
     accent: "#8115EC",
   },
+  cameo: {
+    primary: "#c4f375",
+    secondary: "#567333",
+    accent: "#a2f62f",
+    bg: "#132103",
+    textColor: "#ecfcd9",
+  },
+  redCompilmentary: {
+    primary: "#392626",
+    secondary: "#86222c",
+    accent: "#ec9f3f",
+    bg: "#0a0108",
+    textColor: "#fbd8f2",
+  },
+
+  lightmode1: {
+    primary: "#dd304a",
+    secondary: "#ead47e",
+    accent: "#dfe564",
+    bg: "#fdf0f2",
+    textColor: "#170408",
+  },
+  lightmode2: {
+    primary: "#5cb5b6",
+    secondary: "#9ed5d6",
+    accent: "#72c6c7",
+    bg: "#f8fbfc",
+    textColor: "#060b0b",
+  },
+  lightmode3: {
+    primary: "#58a8b2",
+    secondary: "#89d2de",
+    accent: "#5ecbdb",
+    bg: "#f3f9fa",
+    textColor: "#070d0e",
+  },
+  darkmode1: {
+    primary: "#82bdea",
+    secondary: "#30357a",
+    accent: "#5d4cb9",
+    bg: "#02080d",
+    textColor: "#dbedf9",
+  },
 };

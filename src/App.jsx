@@ -5,11 +5,11 @@ import Hero from "./componets/Hero";
 
 function App() {
   const [themeColor, setColor] = useState({
-    primary: "#14213d",
-    secondary: "#ced4da",
-    accent: "#343a40",
-    bg: "#111",
-    textColor: "#ffffff",
+    primary: "#a6b3c0",
+    secondary: "#195496",
+    accent: "#a2f62f",
+    bg: "#060708",
+    textColor: "#e6eaed",
   });
 
   let lastColorIndex = null;

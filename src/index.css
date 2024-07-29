@@ -10,3 +10,7 @@
 #root {
   height: 100%;
 }
+
+.swap-colors-on-hover:hover {
+  @apply bg-[var(--color)] text-[var(--backgroundColor)];
+}

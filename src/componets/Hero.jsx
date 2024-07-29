@@ -2,6 +2,18 @@ import React from "react";
 import Illustarion from "./Illustarion";
 
 function Hero(props) {
+  function copyToclipboard(typeOfColor) {
+    navigator.clipboard.writeText(typeOfColor);
+    alert("Copied to clipboard");
+  }
+
+  function copyWholePallate() {
+    const pallate = `Background-Color: ${props.bg} , Text-Color : ${props.textColor} , Primary : ${props.primary} , Secondary : ${props.secondary} , Accent : ${props.accent}`;
+
+    navigator.clipboard.writeText(pallate);
+    alert("Pallet Copied to clipboard");
+  }
+
   return (
     <>
       <div className="p-4  flex flex-col  items-center">
@@ -25,9 +37,20 @@ function Hero(props) {
         </div>
         <div className="  w-[90%] mt-5 mb-7 flex flex-col items-center md:flex-row lg:flex-row justify-between ">
           <div className="flex flex-col gap-3 font-thunder  ">
+            <h1
+              className="font-lexend font-light p-2 mb-5 rounded-md"
+              style={{
+                borderColor: props.primary,
+                color: props.primary,
+                boxShadow: ` 0px 7px 10px -1px ${props.secondary}`,
+              }}
+            >
+              Click on color to copy
+            </h1>
             {/* background color */}
             <div
-              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around border-2 "
+              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around border-2  cursor-pointer"
+              onClick={() => copyToclipboard(props.bg)}
               style={{
                 backgroundColor: props.bg,
                 color: props.accent,
@@ -38,21 +61,24 @@ function Hero(props) {
             </div>
             {/* text color */}
             <div
-              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around "
-              style={{ backgroundColor: props.textColor }}
+              onClick={() => copyToclipboard(props.textColor)}
+              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around cursor-pointer"
+              style={{ backgroundColor: props.textColor, color: props.bg }}
             >
               <h1>Text Color</h1>
             </div>
             {/* primary color */}
             <div
-              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around "
+              onClick={() => copyToclipboard(props.primary)}
+              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around cursor-pointer "
               style={{ backgroundColor: props.primary }}
             >
               <h1>Priamry</h1>
             </div>
             {/* secondary color */}
             <div
-              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around "
+              onClick={() => copyToclipboard(props.secondary)}
+              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around cursor-pointer"
               style={{
                 backgroundColor: props.secondary,
                 color: props.textColor,
@@ -62,11 +88,23 @@ function Hero(props) {
             </div>
             {/* Accent color */}
             <div
-              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around"
+              onClick={() => copyToclipboard(props.accent)}
+              className="h-[10vh] w-[40vh] flex items-center p-2 justify-around cursor-pointer"
               style={{ backgroundColor: props.accent, color: props.textColor }}
             >
               <h1>Accent</h1>
             </div>
+            <h1
+              className="font-lexend font-light p-2 mt-5 rounded-md cursor-pointer"
+              onClick={() => copyWholePallate()}
+              style={{
+                borderColor: props.primary,
+                color: props.primary,
+                boxShadow: ` 0px 7px 10px -1px ${props.secondary}`,
+              }}
+            >
+              Click here to copy whole pallate
+            </h1>
           </div>
           <div>
             <Illustarion
