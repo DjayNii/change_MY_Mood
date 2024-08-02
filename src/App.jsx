@@ -2,6 +2,7 @@ import { useState } from "react";
 import { colorsDS } from "./assets/colorsTheme";
 import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
+import UseCases from "./componets/UseCases";
 
 function App() {
   const [themeColor, setColor] = useState({
@@ -85,6 +86,13 @@ function App() {
           </button>
         </div>
         <Hero
+          primary={themeColor.primary}
+          secondary={themeColor.secondary}
+          accent={themeColor.accent}
+          bg={themeColor.bg}
+          textColor={themeColor.textColor}
+        />
+        <UseCases
           primary={themeColor.primary}
           secondary={themeColor.secondary}
           accent={themeColor.accent}
