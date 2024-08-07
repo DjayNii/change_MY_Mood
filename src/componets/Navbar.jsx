@@ -15,8 +15,8 @@ function Navbar(props) {
           <h1>Second</h1>
           <button
             style={{
-              background: `linear-gradient(${props.primary},${props.accent})`,
-              color: props.secondary,
+              background: `linear-gradient(${props.secondary},${props.accent})`,
+              color: props.primary,
             }}
             className="w-[19vw] h-full text-[1.5vh] px-2 py-2  items-center xl:w-[7vw]  h-full text-[2.1vh] px-2 md: w-[12vw]  "
           >

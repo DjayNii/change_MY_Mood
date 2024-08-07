@@ -6,11 +6,11 @@ import UseCases from "./componets/UseCases";
 
 function App() {
   const [themeColor, setColor] = useState({
-    primary: "#a6b3c0",
-    secondary: "#195496",
-    accent: "#a2f62f",
-    bg: "#060708",
-    textColor: "#e6eaed",
+    textColor: "#ECEBED", // Light grey for text
+    bg: "#0C090E", // Dark purple/black background
+    primary: "#7B1FA2", // Rich purple for primary
+    secondary: "#2F4A29", // Even darker olive green for a deeper tone
+    accent: "#a2f62f", // Bright green accent, unchanged
   });
 
   let lastColorIndex = null;
@@ -82,7 +82,7 @@ function App() {
             }}
             onClick={updateColor}
           >
-            Change my mood
+            Change the colors
           </button>
         </div>
         <Hero

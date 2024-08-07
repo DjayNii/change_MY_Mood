@@ -30,8 +30,7 @@ function Hero(props) {
               style={{ color: props.primary }}
             >
               Choosing colors shouldn't feel like calculus class <br /> we speak
-              fluent color, it's as simple as clicking a button, choose easy and
-              choose us!
+              fluent color, it's as simple as clicking a button,
             </h2>
           </div>
         </div>
@@ -106,12 +105,23 @@ function Hero(props) {
               Click here to copy whole pallate
             </h1>
           </div>
-          <div>
+          <div
+            className="relative w-[50%] backdrop-blur-lg border border-white/20 gap-2 p-4 rounded-lg mt-4 flex flex-col justify-center items-center"
+            style={{ background: `${props.textColor}15` }}
+          >
+            <h1
+              className="font-thunder text-2xl tracking-wide uppercase"
+              style={{ color: props.primary }}
+            >
+              choose easy choose us
+            </h1>
             <Illustarion
               primary={props.primary}
               secondary={props.secondary}
               accent={props.accent}
               textColor={props.textColor}
+              bg={props.bg}
+              className="absolute"
             />
           </div>
         </div>

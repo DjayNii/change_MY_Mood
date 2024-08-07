@@ -20,7 +20,7 @@ function UseCases(props) {
           Use Cases
         </h1>
         <div
-          className="h-[70vh] sm:h-[65vh] md:h-[60vh] lg:h-[70vh] xl:h-[58vh] w-[95%] flex flex-col gap-2 p-2 text-base sm:text-xl md:text-xl lg:text-2xl "
+          className="xl:h-[58vh] w-[95%] flex flex-col gap-2 p-2 text-base sm:text-xl md:text-xl lg:text-2xl "
           style={{ backgroundColor: props.bg }}
         >
           <div
