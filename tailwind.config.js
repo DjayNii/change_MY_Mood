@@ -4,18 +4,18 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        sm: "0.750rem",
-        base: "1rem",
-        xl: "1.333rem",
-        "2xl": "1.777rem",
-        "3xl": "2.369rem",
-        "4xl": "3.158rem",
-        "5xl": "4.210rem",
+        sm: "0.75rem", // 12px
+        base: "1rem", // 16px
+        lg: "1.5rem", // 24px
+        xl: "2rem", // 32px
+        "2xl": "2.5rem", // 40px
+        "3xl": "3rem", // 48px
+        "4xl": "3.5rem", // 56px
+        "5xl": "4rem", // 64px
       },
       fontFamily: {
-        thunder: ["Thunder_LC", "serif"],
         Anton: ["Anton SC", "serif"],
-        lexend: ["Lexend", "sans-serif"],
+        IBM: ["IBM Plex Mono", " monospace"],
       },
     },
   },

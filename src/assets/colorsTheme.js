@@ -84,4 +84,11 @@ export const colorsDS = {
     bg: "#02080d",
     textColor: "#dbedf9",
   },
+  purpleNeon: {
+    textColor: "#ECEBED",
+    bg: "#0C090E",
+    primary: "#7B1FA2",
+    secondary: "#2F4A29",
+    accent: "#a2f62f",
+  },
 };

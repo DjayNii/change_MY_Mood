@@ -6,11 +6,11 @@ import UseCases from "./componets/UseCases";
 
 function App() {
   const [themeColor, setColor] = useState({
-    textColor: "#ECEBED", // Light grey for text
-    bg: "#0C090E", // Dark purple/black background
-    primary: "#7B1FA2", // Rich purple for primary
-    secondary: "#2F4A29", // Even darker olive green for a deeper tone
-    accent: "#a2f62f", // Bright green accent, unchanged
+    textColor: "#E6EAED",
+    bg: "#1E1E1E",
+    primary: "#A6B3C0",
+    secondary: "#195496",
+    accent: "#FF9900",
   });
 
   let lastColorIndex = null;
@@ -59,46 +59,20 @@ function App() {
   return (
     <>
       <div
-        className="w-[100vw] h-[100%] "
+        className="w-[100vw] h-[100vh] "
         style={{
           backgroundColor: themeColor.bg,
         }}
       >
-        <Navbar
-          primary={themeColor.primary}
-          secondary={themeColor.secondary}
-          accent={themeColor.accent}
-          bg={themeColor.bg}
-          textColor={themeColor.textColor}
-        />
-
-        <div className="text-center">
-          <button
-            className="w-[20vh]  h-[10vh] mb-4 text-xl font-thunder font-bold tracking-wider rounded-md"
-            style={{
-              background: `linear-gradient(${themeColor.secondary},${themeColor.accent})`,
-              color: themeColor.primary,
-              boxShadow: ` 0 2px 8px 0 ${themeColor.accent}, 0 0px 20px 0 ${themeColor.accent}`,
-            }}
-            onClick={updateColor}
-          >
-            Change the colors
-          </button>
+        <div className="relative top-[36.3vh]">
+          <Hero
+            primary={themeColor.primary}
+            secondary={themeColor.secondary}
+            accent={themeColor.accent}
+            bg={themeColor.bg}
+            textColor={themeColor.textColor}
+          />
         </div>
-        <Hero
-          primary={themeColor.primary}
-          secondary={themeColor.secondary}
-          accent={themeColor.accent}
-          bg={themeColor.bg}
-          textColor={themeColor.textColor}
-        />
-        <UseCases
-          primary={themeColor.primary}
-          secondary={themeColor.secondary}
-          accent={themeColor.accent}
-          bg={themeColor.bg}
-          textColor={themeColor.textColor}
-        />
       </div>
     </>
   );
