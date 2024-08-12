@@ -27,19 +27,11 @@ function Hero(props) {
             </h1>
             <h2
               className="font-IBM font-light text-base mt-4 mb-4"
-              style={{ color: props.textColor }}
+              style={{ color: props.primary }}
             >
               Choosing colors shouldn't feel like calculus class we speak fluent
               color, it's as simple as clicking a button,
             </h2>
-
-            <CtaButton
-              primary={props.primary}
-              secondary={props.secondary}
-              accent={props.accent}
-              bg={props.bg}
-              textColor={props.textColor}
-            />
           </div>
         </div>
       </div>

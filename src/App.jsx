@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { colorsDS } from "./assets/colorsTheme";
-import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
-import UseCases from "./componets/UseCases";
-
+import CtaButton from "./componets/CtaButton";
+import PallateBox from "./componets/PallateBox";
 function App() {
   const [themeColor, setColor] = useState({
     textColor: "#E6EAED",
@@ -59,13 +58,28 @@ function App() {
   return (
     <>
       <div
-        className="w-[100vw] h-[100vh] "
         style={{
           backgroundColor: themeColor.bg,
         }}
       >
         <div className="relative top-[36.3vh]">
           <Hero
+            primary={themeColor.primary}
+            secondary={themeColor.secondary}
+            accent={themeColor.accent}
+            bg={themeColor.bg}
+            textColor={themeColor.textColor}
+          />
+          <div className="px-9" onClick={() => updateColor()}>
+            <CtaButton
+              primary={themeColor.primary}
+              secondary={themeColor.secondary}
+              accent={themeColor.accent}
+              bg={themeColor.bg}
+              textColor={themeColor.textColor}
+            />
+          </div>
+          <PallateBox
             primary={themeColor.primary}
             secondary={themeColor.secondary}
             accent={themeColor.accent}

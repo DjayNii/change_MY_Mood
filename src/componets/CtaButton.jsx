@@ -7,6 +7,7 @@ function CtaButton(props) {
       style={{
         backgroundColor: props.textColor,
         borderColor: props.accent,
+        color: props.bg,
         boxShadow: ` 0 0px 24px 0${props.accent}, 0 2px 4px 0 ${props.accent}`,
       }}
     >
