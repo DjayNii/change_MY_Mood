@@ -3,6 +3,8 @@ import { colorsDS } from "./assets/colorsTheme";
 import Hero from "./componets/Hero";
 import CtaButton from "./componets/CtaButton";
 import PallateBox from "./componets/PallateBox";
+import HowToUse from "./componets/HowToUse";
+
 function App() {
   const [themeColor, setColor] = useState({
     textColor: "#E6EAED",
@@ -80,6 +82,21 @@ function App() {
             />
           </div>
           <PallateBox
+            primary={themeColor.primary}
+            secondary={themeColor.secondary}
+            accent={themeColor.accent}
+            bg={themeColor.bg}
+            textColor={themeColor.textColor}
+          />
+          <HowToUse
+            primary={themeColor.primary}
+            secondary={themeColor.secondary}
+            accent={themeColor.accent}
+            bg={themeColor.bg}
+            textColor={themeColor.textColor}
+          />
+          <PallateBox
+            className="mt-6"
             primary={themeColor.primary}
             secondary={themeColor.secondary}
             accent={themeColor.accent}
