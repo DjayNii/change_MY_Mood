@@ -1,8 +1,5 @@
 import React from "react";
 import { RiCircleFill, RiMoonFill, RiBardFill } from "@remixicon/react";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
 
 function NoteOne(props) {
   return (

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { RiCircleFill } from "@remixicon/react";
 import NoteOne from "./NoteOne";
+import NoteTwo from "./NoteTwo";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -18,7 +19,6 @@ function HowToUse(props) {
       pin: true,
       start: "top top",
       end: "+=1800",
-      markers: true,
     });
 
     gsap.to(notes.current, {
@@ -28,7 +28,6 @@ function HowToUse(props) {
       scrollTrigger: {
         trigger: mainDiv.current,
         start: "top 50%",
-        markers: true,
         scrub: 1,
         end: "+=2000px",
       },
@@ -58,46 +57,26 @@ function HowToUse(props) {
             }}
           >
             <NoteOne
+              bg={props.bg}
               primary={props.primary}
               secondary={props.secondary}
-              bg={props.bg}
               textColor={props.textColor}
             />
           </div>
           {/* note 2 */}
           <div
-            className="w-100% h-[100vh] rounded-br-[5.1vh] flex flex-col py-2  translate-y-2"
+            className="w-100% h-[100vh] rounded-br-[5.1vh] flex flex-col  translate-y-2"
             style={{ backgroundColor: props.secondary }}
             ref={(i) => {
               notes.current[1] = i;
             }}
           >
-            <div className="flex flex-row gap-2 px-2">
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-              <RiCircleFill size={20} color={props.bg} />
-            </div>
-            <div className="relative top-[16%]">
-              <div className="flex flex-row gap-4 p-1">
-                <h1 className="text-8xl font-Anton">02</h1>
-                <h1 className="text-xl font-Anton text-left">
-                  primary &<br></br> secondary
-                </h1>
-              </div>
-              <div className="p-2 leading-6 font-IBM font-light text-base text-justify">
-                they are like the moon and stars in the night sky. Your
-                background sets the scene, while your text color shines
-                brightly, ensuring clarity and elegance.
-              </div>
-            </div>
+            <NoteTwo
+              bg={props.bg}
+              primary={props.primary}
+              secondary={props.secondary}
+              textColor={props.textColor}
+            />
           </div>
           {/* note 3 */}
           <div
